@@ -1,0 +1,48 @@
+Ejercicio 1
+
+git config --global user.name "Betzy Portugal"
+git config --global user.email "betzy.portugal.5@gmail.com"
+git config --global color.ui auto
+
+Ejercicio 2
+
+mkdir libro
+cd libro
+git init
+
+Ejercicio 3
+
+git status
+cat > indice.txt
+Capìtulo 1:Introduccion a Git
+Capìtulo 2:Flujo de Trabajo logico
+Capìtulo 3:Repositorios remotos
+Ctrl D
+git status
+git status
+git add indice.txt
+git status
+
+Ejercicio 4
+
+git commit -m "Añadido índice del libro."
+git status
+
+Ejercicio 5
+
+cat > indice.txt
+Capìtulo 1:Introduccion a Git
+Capìtulo 2:Flujo de Trabajo logico
+Capìtulo 3:Gestion de ramas
+Capìtulo 4:Repositorios remotos
+Ctrl D
+git diff
+git add indice.txt
+git commit -m "Añadido capítulo 3 sobre gestión de ramas"
+git status
+
+Ejercicio 6
+
+git show
+git commit --amend -m "Añadido capítulo 3 sobre gestión de ramas al índice."
+git show
