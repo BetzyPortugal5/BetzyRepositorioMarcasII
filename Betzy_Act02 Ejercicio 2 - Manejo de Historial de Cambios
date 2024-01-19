@@ -1,0 +1,40 @@
+Ejercicio 1
+
+git show
+mkdir capitulos
+cd capitulos
+echo Git es un sistema de control de versiones ideado por Linus Torvalds. >> capitulo1.txt
+git add .
+git commit -m "Añadido capítulo 1."
+git show
+
+Ejercicio 2
+
+COPY CON capitulo2.txt
+El flujo de trabajo lógico con Git consiste en:
+1- Hacer cambios en el repositorio.
+2- Añadir los cambios a la zona de intercambio temporal.
+3-Hacer un commit de los cambios.
+^Z
+git add .
+git commit -m "Añadido capítulo 2."
+git diff HEAD~2..HEAD
+
+Ejercicio 3
+
+echo Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas. >> capitulo3.txt
+git add .
+git commit -m "Añadido capítulo 3."
+git show
+git diff sh6st..HEAD
+
+NOTA:"sh6st" <referencia del codigo hash de la primera version>
+
+Ejercicio 4
+
+cd ..
+cd libro
+echo Capítulo 5: Conceptos avanzados >> indice.txt
+git add .
+git commit -m "Añadido capítulo 5 al índice."
+git annotate indice.txt
