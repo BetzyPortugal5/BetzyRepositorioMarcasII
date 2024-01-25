@@ -1,0 +1,52 @@
+1. EJERCICIO 1
+
+git branch bibliografia
+git branch -av
+
+2. EJERCICIO 2
+
+cd capitulos
+echo>capitulo4.txt
+En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
+Ctrl+C
+git add .
+git commit -m "Añadido capítulo 4."
+git log --graph --all --oneline
+
+3. EJERCICIO 3
+
+git checkout bibliografia
+echo> bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
+Ctrl+C
+git add .
+git commit -m "Añadida primera referencia bibliográfica."
+git log --graph --all --oneline
+
+4. EJERCICIO 4
+
+git checkout master
+git merge bibliografia
+git log --graph --all --oneline
+git branch -d bibliografia
+git log --graph --all --oneline
+
+5. EJERCICIO 5
+
+git branch bibliografia
+git checkout bibliografia
+echo> bibliografia.txt
+- Scott Chacon and Ben Straub. Pro Git. Apress.
+- Ryan Hodson. Ry's Git Tutorial. Smashwords (2014)
+Ctrl+C
+git commit -a -m "Añadida nueva referencia bibliográfica."
+git checkout master
+echo> bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
+- Loeliger, J. and McCullough, M. Version control with Git. O'Reilly.
+Ctrl+C
+git commit -a -m "Añadida nueva referencia bibliográfica."
+git merge bibliografia
+git notepad bibliografia
+git commit -a -m "Solucionado conflicto bibliografía."
+git log --graph --all --oneline
